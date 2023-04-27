@@ -62,6 +62,12 @@ const styles = () => {
   .pipe(browserSync.stream())
 }
 
+const concatCss = () => {
+  return src('src/styles/css/**/*.css')
+    .pipe(concat('main.css'))
+    .pipe(dest('src/styles/css'))
+}
+
 const htmlMinify = () => {
   return src('src/**/*.html')
   .pipe(gulpif(argv.prod, htmlMin({
@@ -115,6 +121,7 @@ watch('src/js/**/*.js', scripts)
 
 exports.fonts = fonts
 exports.styles = styles
+exports.concatCss = concatCss;
 exports.htmlMinify = htmlMinify
 exports.scripts = scripts
 exports.preproc = preproc
@@ -122,5 +129,6 @@ exports.images = images
 
 task('img', images);
 task('fonts', fonts);
+task('concat', concatCss);
 
 exports.default = series(clean, htmlMinify, scripts, preproc, styles, watchFiles);

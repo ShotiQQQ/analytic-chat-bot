@@ -1,0 +1,41 @@
+.question {
+  display: flex;
+  align-items: center;
+  min-height: 72px;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 17px;
+  line-height: 1.18;
+  color: #000;
+  padding: 12px 12px 12px 71px;
+  border-radius: 12px;
+  background-image: url("../img/checked.svg");
+  background-repeat: no-repeat;
+  background-position: 12px 50%;
+  background-size: 48px 48px;
+
+  &_1 {
+    background-color: #DEE4C8;
+  }
+
+  &_2 {
+    background-color: #CDDFE2;
+  }
+
+  &_3 {
+    background-color: #E2DED2;
+  }
+
+  &_4 {
+    background-color: #EDD3CD;
+  }
+
+  &_5 {
+    background-color: #CDE6CE;
+  }
+
+  &_6 {
+    background-color: #DED7DF;
+  }
+
+}

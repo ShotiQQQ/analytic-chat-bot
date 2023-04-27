@@ -1,0 +1,40 @@
+.main {
+
+  &__container {
+
+  }
+
+  &__request {
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__question {
+    margin-bottom: 20px;
+  }
+
+  &__first {
+    padding-top: 28px;
+    padding-bottom: 86px;
+    border-bottom: 1px solid gray;
+  }
+
+  &__second {
+    padding-top: 32px;
+    padding-bottom: 28px;
+  }
+
+  &__sixth {
+    padding-bottom: 110px;
+    border-bottom: 1px solid gray;
+  }
+
+  &__presentation {
+    padding-top: 28px;
+    padding-bottom: 426px;
+  }
+
+}

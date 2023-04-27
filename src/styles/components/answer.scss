@@ -1,0 +1,25 @@
+.answer {
+  margin-bottom: 20px;
+
+  &_border {
+    padding-bottom: 28px;
+    border-bottom: 1px solid gray;
+    margin-bottom: 28px;
+
+    .question {
+      margin-top: 20px;
+    }
+
+  }
+
+  &__wrapper {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.4;
+    color: #000;
+    background-color: #FFF;
+    padding: 16px 20px;
+    border-radius: 12px;
+  }
+
+}
